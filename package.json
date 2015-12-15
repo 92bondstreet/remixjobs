@@ -1,0 +1,13 @@
+{
+  "name": "RemixJobs_API",
+  "version": "0.0.0",
+  "description": "RemixJobs_API",
+  "main": "app.js",
+  "author": {
+    "name": "AP",
+    "email": ""
+  },
+  "dependencies": {
+    "mongodb": "^2.1.1"
+  }
+}

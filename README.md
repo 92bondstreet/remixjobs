@@ -1,92 +1,30 @@
 # Remixjobs
 
 > Unofficial Remixjobs API
+This is the first unofficial API for remixjobs, an online web engine to look for 
+jobs in the IT departement
 
-## Introduction
+## Usage
+### Start
+To start using the API, you need to lauch server.js with the npm command (given that npm
+is already installed on your computer): node server.js.
+Then you must launch MongoDB (mongod.exe and mongo.exe).
+Finally you launch postman in order to view the response to the further requests.
 
-[RemixJobs](https://remixjobs.com/) is the best French job board for the Web Industry.
-
-Today, no (un)official API was developed to allow developers to add jobs in their web application
-
-## Workshop in 1 sentence
-
-*Build a remixjobs RESTful API*
-
-## How to do that?
-
-Transcript the API description in code ;)
-
-The goal is write enough endpoints with the right filters and fields to build a specific job boards as:
-
-* A job board for JavaScript intership
-* A job board for remote jobs on Big Data
-* A job board for Designers who want sunny weather... so in South Of France
-
-Etc, etc, etc...
-
-## Stack
-
-* Node.js
-* Express 4
-* MongoDB
-* Postman
-
-## Api description
-
-We could define a job by its
-
-1. Job title
-1. Company
-1. Localization
-1. Category
-1. Description
-1. Contract
-1. Date
-1. Tags
-
-### /jobs
-
-* Return all jobs
-* Create a new job
-* Return information of a job
-* Update a jobs
-
-#### Non exhaustive parameters
-
-parameters | description
----------- | -----------
-q | the query
-contract | filter by contract (cdi, cdd...)
-category | design, dev...
-where | localization
-limit | Jobs number
-
-### /jobs/latest
-
-* Return all jobs of the current day
-
-### /companies
-
-* Return all companies
-* Return all jobs of a the given companies
-
-## Jobs model
-
-I think that the first step is to scrap datas from RemixJobs website and fill a [mongoDB](https://www.mongodb.org/) database.
-
-Once database filled, your api will fetch/save/update data from this database in a real API consuming.
-
-
-## API rules (at least to follow)
-
-1. RESTful URLs and actions
-1. Plural noun
-1. Version via the url
-1. Query parameters for advanced filtering, sorting and searching
-1. Limit fields are returned from the APO
-1. JSON only
-1. snake_case for resources
-1. Use HTTP Status codes
+###Routes
+Several routes are present:
+###/api/jobs
+ get->retieve all the jobs
+###/api/jobs/:jobid
+ get->retrive the specific job
+ put->updates the specific job
+ delete->deletes the specific job
+###/api/comapnies/:company
+  get->retrieves all the jobs available for a company
+###/api/contracts/:contract
+  get->retrives all the jobs with the same contract as the one specified
+###/api/locations/:joblocation
+  get->retrives all the jobs with a the same localisation as the one specified
 
 ## Licence
 

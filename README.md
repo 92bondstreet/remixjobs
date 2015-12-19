@@ -6,9 +6,9 @@ jobs in the IT departement
 
 ## Usage
 ### Start
-To start using the API, you need to lauch server.js with the npm command( given that npm
+To start using the API, you need to lauch server.js with the npm command (given that npm
 is already installed on your computer): node server.js.
-Then you must launch MongoDB (mongod.exe and mongo.exe);
+Then you must launch MongoDB (mongod.exe and mongo.exe).
 Finally you launch postman in order to view the response to the further requests.
 
 ###Routes

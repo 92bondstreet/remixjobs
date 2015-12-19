@@ -1,0 +1,17 @@
+{
+  "name": "remixpro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joanne Tenkorang <sunnyjojo@live.fr> (http://esilv.fr)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "kerberos": "^0.0.17",
+    "mongoose": "^4.3.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
